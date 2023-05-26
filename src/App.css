@@ -1,38 +1,74 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.infoImage {
+  border: 2px solid rgb(116, 62, 62);
+  background-color: rgb(252, 246, 246);
+  width: auto;
+  height: 420px;
+  padding-top: 2rem;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wine-container {
+  --auto-grid-min-size: 23rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  grid-gap: 1rem;
+  gap: 5px;
+  margin: 1rem;
+  padding: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem;
+}
+
+
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+ 
+.container {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #f0f1f3;
 }
-
-.App-link {
-  color: #61dafb;
+ 
+.btn-container {
+  display: flex;
+  flex-direction: 'row';
+  align-items: center;
+  background-color: #fff;
+  padding: 30px 50px;
+  border-radius: 12px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ 
+.btn {
+  border: none;
+  color:#fff;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap:6px;
+  background-color: #bdc0c5;
+  border-radius: 4px;
+  padding: 6px 15px;
+  margin: 0 10px;
+}
+ 
+.like-active {
+  background-color: #FF0063;
+}
+ 
+.dislike-active {
+  background-color: #394350;
 }
